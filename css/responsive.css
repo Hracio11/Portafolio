@@ -1,0 +1,109 @@
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-link {
+    margin: 0.5rem 0; /* Espaciado vertical para enlaces */
+  }
+  
+  /* Hero Section */
+  .hero h1 {
+    font-size: 2.5rem; /* Título más pequeño en móviles */
+    text-align: center;
+  }
+  
+  .hero p {
+    font-size: 0.9rem;
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .hero .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero .btn-outline-light {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  /* Profile Card */
+  .profile-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-box {
+    width: 95%; /* Se ajusta al ancho de la tarjeta */
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .contact-box .contact-text {
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  /* UX Solutions */
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .solution-card .card-body {
+    padding: 20px;
+  }
+  
+  /* Botón de WhatsApp */
+  .btn-wsp {
+    bottom: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .btn-wsp img {
+    width: 1.5rem;
+  }
+}
+
+/* Media query para tabletas */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Hero Section */
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+    max-width: 80%;
+  }
+
+  /* Profile Card */
+  .profile-card {
+    width: 20rem; /* 320px */
+  }
+
+  /* UX Solutions Section */
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .solution-card .card-text {
+    font-size: 0.95rem;
+  }
+
+  /* Footer */
+  .main-footer {
+    padding-top: 2rem;
+  }
+
+  .social-icons a {
+    margin: 0 8px;
+  }
+}
+
