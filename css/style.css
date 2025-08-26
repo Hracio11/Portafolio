@@ -183,7 +183,6 @@ body {
 
 /* Sección de UX Solutions */
 .ux-solutions-section {
-    background-color: #121212;
     color: #fff;
     padding: 80px 0;
 }
@@ -204,14 +203,22 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
 
+.card-image-top {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
 .solution-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 255, 153, 0.5); /* Sombra verde */
-    border: 2px solid #00ff99; /* Borde verde */
+    box-shadow: 0 8px 20px rgba(0, 255, 153, 0.5); 
+    border: 2px solid #00ff99; 
 }
 
 .solution-card .card-body {
     padding: 30px;
+    color: #fff;
 }
 
 /* Ícono del rayo */
@@ -219,18 +226,57 @@ body {
     width: 30px;
     height: 30px;
     filter: invert(1) sepia(1) saturate(5) hue-rotate(90deg) brightness(1.2);
-    transition: all 0.3s ease;
+    transition: filter 0.3s ease;
 }
 
-/* Glow neón en la silueta del rayo */
+/* Efecto de brillo neón al pasar el mouse por la tarjeta */
 .solution-card:hover .rayo-icon {
-    fill: #00ff99;
     filter: drop-shadow(0 0 5px #00ff99)
             drop-shadow(0 0 10px #00ff99)
-            drop-shadow(0 0 20px #00ff99);
+            drop-shadow(0 0 20px #00ff99)
+            drop-shadow(0 0 30px #00ff99);
 }
+
+/* Sección de UX Solutions */
 .solution-card .card-text {
     color: #b3b3b3;
     font-size: 1rem;
     line-height: 1.6;
+    text-align: justify;
+}
+
+/* Footer */
+.main-footer {
+    background: linear-gradient(0deg, #00ff99, transparent);
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    filter: invert(1); /* Para que los íconos sean blancos */
+}
+
+.footer-divider {
+    border-color: #fff;
+    opacity: 0.5;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.copyright-text {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-top: 1rem;
 }
