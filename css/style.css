@@ -142,6 +142,7 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .contact-box .contact-btn:hover {
@@ -177,4 +178,59 @@ body {
 .btn-wsp:hover {
   transform: scale(1.1) translateY(-3px);
   box-shadow: 0 0.75rem 1.25rem rgba(37, 211, 102, 0.6);
+}
+
+
+/* Sección de UX Solutions */
+.ux-solutions-section {
+    background-color: #121212;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.solution-card {
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 255, 153, 0.5); /* Sombra verde */
+    border: 2px solid #00ff99; /* Borde verde */
+}
+
+.solution-card .card-body {
+    padding: 30px;
+}
+
+/* Ícono del rayo */
+.rayo-icon {
+    width: 30px;
+    height: 30px;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(90deg) brightness(1.2);
+    transition: all 0.3s ease;
+}
+
+/* Glow neón en la silueta del rayo */
+.solution-card:hover .rayo-icon {
+    fill: #00ff99;
+    filter: drop-shadow(0 0 5px #00ff99)
+            drop-shadow(0 0 10px #00ff99)
+            drop-shadow(0 0 20px #00ff99);
+}
+.solution-card .card-text {
+    color: #b3b3b3;
+    font-size: 1rem;
+    line-height: 1.6;
 }
